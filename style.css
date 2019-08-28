@@ -1,3 +1,58 @@
+body {
+    background-image: url('images/back3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.col-menu{
+	margin-right: 10px;
+}
+
+/* Menu de navegação*/
+#menu {
+    margin-top: 10px;
+    position: fixed;
+    	margin-right: 10px;
+
+}
+
+li {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#imenu {
+    color: white;
+    font-size: 100%;
+}
+
+/* About me config*/
+#aboutme {
+    margin-top: 10px;
+    padding: 40px;
+    background-color: white;
+}
+
+.photoImage{
+	margin-bottom: 30px; 
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center"
+}
+
+#photo {
+    width: 180px;
+    height: 180px;
+}
+
+#myname {
+    text-align: center;
+    font-family: courier;
+}
+
 /* social network buttons*/
 .fa {
     padding: 10px;
@@ -7,44 +62,173 @@
     text-decoration: none;
 }
 
-.fa:hover{
-	color: white;
+.fa:hover {
+    color: white;
 }
 
 .fa-facebook {
-    background: #3B5998;
+    background: white;
+    color: #3B5998;
+    border-radius: 5px;
+}
+
+.fa-github {
+    background: white;
+    color: black;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.fa-linkedin {
+    background: white;
+    color: #007bb5;
+    border-radius: 5px;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 5px;
     color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
 
-.fa-github{
-	background: black;
-	color: white;
-}
-
-.fa-linkedin{
-	background: #007bb5;
-  	color: white;
-}
-
-.fa-instagram{
-    background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-color:white;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-.back-to-top {
-	position: fixed;
-	bottom: 2em;
-    right: 2em;
-    text-decoration: none;
+#return-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 7em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(114, 110, 249);
     color: white;
-   	background-color:rgb(51, 173, 255);
-    font-size: 12px;
-    padding: 1em;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
-.back-to-top:hover{
-	color: white;
+#return-to-top:hover {
+    background-color: #555;
+    Add a dark-grey background on hover
+}
+
+/* Resume */
+#resume {
+    margin-top: 10px;
+    background-color: white;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: courier;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work li span {
+    float: right;
+}
+
+.work li {
+    border-bottom: 1px solid #9ba9ad;
+    margin-bottom: 2em;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.label {
+    display: inline;
+    padding: .25em .6em;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.label-info {
+    background-color: #5bc0de;
+}
+
+.no-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.progress {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    text-align: left;
+    font-weight: bold;
+}
+
+#portfolio {
+    margin-top: 10px;
+    background-color: white;
+}
+
+/* responsive aboutme */
+@media screen and (max-width: 1550px) {
+    #myname {
+        font-size: 25px;
+    }
+
+    #photo {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    #photo {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #photo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #menu {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #facebook {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    #github {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    #linkedin {
+        display: block;
+        margin: 0 auto;
+    }
 }
