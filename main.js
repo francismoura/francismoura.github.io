@@ -14,4 +14,5 @@
             btn_to_top.style.display = "none";
         }
     });
+
 })(document);
