@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -16,43 +18,41 @@
 </head>
 
 <body data-spy="scroll" data-target=".nav" data-offset="50">
-    <div style="background-color: rgba(0,0,0,0.6)">
-        <div class=" row justify-content-end">
+    <div class="container-fluid">
+        <div class="row">
             <!-- Menu de opções -->
-            <div class="col-menu col-md-3">
+            <div class="col-3" style="background-color: rgba(0,0,0,0.6);">
                 <div class="container" id="menu">
                     <ul class="nav nav-pills flex-column">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <li class="nav-item rounded" style="background-color: rgb(51, 173, 255);">
+                        <li class="nav-item rounded col-md-4">
                             <a class="nav-link" id="imenu" href="#aboutme"><b>Sobre mim</b></a>
                         </li>
-                        <li class="nav-item rounded" style="background-color: rgb(51, 173, 255);">
-                            <a class="nav-link" id="imenu" href="#objetivo"><b>Objetivo</b></a></li>
-                        <li class="nav-item rounded" style="background-color: rgb(51, 173, 255);">
-                            <a class="nav-link" id="imenu" href="#habilidade"><b>Experiencia</b></a>
+                        <li class="nav-item rounded col-md-4">
+                            <a class="nav-link" id="imenu" href="#resumo"><b>Resumo</b></a></li>
+                        <li class="nav-item rounded col-md-4">
+                            <a class="nav-link" id="imenu" href="#experiencia"><b>Experiência</b></a>
                         </li>
-                        <li class="nav-item rounded" style="background-color: rgb(51, 173, 255);">
-                            <a class="nav-link" id="imenu" href="#experiencia"><b>Atividades</b></a>
+                        <li class="nav-item rounded col-md-4">
+                            <a class="nav-link" id="imenu" href="#atividade"><b>Atividades</b></a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-md-center" style="margin-top: 10px">
             <!-- info page -->
-            <div class="col-xl-6" style="background-color: rgba(0,0,0,0.2);">
-                <div class="container rounded" id="aboutme" style="margin-top: 10px;  background-color: white">
+            <div class="col-xl-6" style="background-color: rgba(0,0,0,0.6);">
+                <div class="container rounded section" id="aboutme">
+                    <!-- Photo and description -->
                     <div class="row">
-                        <!-- Photo and description -->
                         <div class="col-xl-3">
                             <img id="photo" src="images/francis.jpg" class="rounded-circle">
                         </div>
                         <div class="col-xl-9">
                             <h2 id="myname"><b>Francis Moura</b></h2>
                             <div class="container" style="margin-top: 20px;">
-                                <p class="h6 text-justify">Graduado em Sistemas de Informação pela Universidade Federal de Lavras. Mais um monte de texto que pode entrar aqui se eu realmente quiser colocar algo. </p>
+                                <p class="h6 text-justify">Graduado em Sistemas de Informação pela Universidade Federal de Lavras - Brasil. Sou dedicacurioso, motivado por desafios e gosto de aprender novas tecnologias.</p>
                             </div>
                         </div>
                     </div>
@@ -63,88 +63,108 @@
                             <a id="email" href="mailto: francisgulla@gmail.com" class="h6"><b>francisgulla@gmail.com</b></a>
                         </div>
                         <div class="offset-sm-2 col-sm-1">
-                            <a id="facebook" href="https://www.facebook.com/francisgulla"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+                            <a id="facebook" href="https://www.facebook.com/francisgulla">
+                            	<img src="images/face.png" alt="Facebook" class="social facebook">
+                            </a>
                         </div>
                         <div class="col-sm-1">
-                            <a id="github" href="https://github.com/francismoura"><i class="fab fa-github fa-2x rounded-circle" aria-hidden="true"></i></a>
+                            <a id="github" href="https://github.com/francismoura">
+                            	<img src="images/github.png" alt="Github" class="social github">
+                            </a>
                         </div>
                         <div class="col-sm-1">
-                            <a id="linkedin" href="https://www.linkedin.com/in/francis-moura-6204a5140/"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                            <a id="linkedin" href="https://www.linkedin.com/in/francis-moura-6204a5140/"><img src="images/linkdin.png" alt="Linkedin" class="social linkedin">
+                            </a>
                         </div>
                         <div class="col-sm-1">
-                            <a id="instagram" href="https://www.instagram.com/francisgulla/"> <i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                            <a id="instagram" href="https://www.instagram.com/francisgulla/"> 
+                            	<img src="images/insta.png" alt="Instagram" class="social instagram">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- experiencia profissional -->
-                <div class="container rounded" id="objetivo" style="margin-top: 10px; background-color: white">
-                    <h3><b>Objetivo</b></h3>
-                    <p>Conquistar uma vaga de Analista Desenvolvedor</p>
-                </div>
                 <!-- Resume -->
-                <div class="container rounded" id="habilidade" style="margin-top: 10px; background-color: white">
-                    <h3><b>Habilidades</b></h3>
-                    <p>Conquistar uma vaga de Analista Desenvolvedor</p>
-                </div>
-                <!-- Formação Acadêmica -->
-                <div class="container rounded" id="experiencia" style="margin-top: 10px; background-color: white">
-                    <h3><b>Experiencia Profissional</b></h3>
+                <div class="container section rounded" id="resumo">
                     <div class="row">
                         <div class="col-md-12">
-                            <ul class="no-list work">
-                                <li>
-                                    <span class="label label-info"></span>
-                                    <h5><b>Infrastructure</b></h5>
+                            <h2><b>Resumo</b></h2>
+                            <ul class="no-list ">
+                                <h3><b>Habilidades</b></h3>
+                                <li class="work">
                                     <p>
-                                    </p>
-                                </li>
-                                <li>
-                                    <span class="label label-info">2017-curr, EMAKERS-UFL</span>
-                                    <h5><b>Project director</b></h5>
-                                    <p>
+                                        Tenho experiência em desenvolvimento mobile para Android com Java nativo e em desenvolvimento web com PHP, JavaScript, HTML e CSS, utilizando frameworks Laravel 5.6, Vue.js e Material Design. Também possuo ótima compreensão em sistemas de versionamento GIT, das linguagens Python, C/C++, e dos bancos de dados MySql e MongoDB.
                                     </p>
                                 </li>
                             </ul>
-                            <ul class="no-list work">
-                                <h3><b>Education</b></h3>
-                                <li>
-                                    <span class="label label-info">2016-curr., UFLA</span>
-                                    <h5><b>Federal University of Lavras</b></h5>
-                                    <p>
-                                        Bachelor's degree, Computer Science.
-                                    </p>
+                            <ul class="no-list">
+                                <h3><b>Formação Acadêmica</b></h3>
+                                <li class="work">
+                                    <span class="label label-info">2008-2017, UFLA</span>
+                                    <h5><b>Univesidade Federal de Lavras</b></h5>
+                                    <p> Bacharel em Sistemas de Informação</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experiência -->
+                <div class="container section rounded" id="experiencia">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><b>Experiência Profissional</b></h2>
+                            <ul class="no-list">
+                                <li class="work">
+                                    <span class="label label-info"><b>out/2017 - out/2018, DGTI-UFLA</b></span>
+                                    <h5><b>Desenvolvedor Full Stack</b></h5>
+                                    <ul>
+                                        <li>
+                                            Manutenções e suporte do aplicativo Android “MinhaUfla”, criado para gerenciamento dos dados de estudantes e técnicos administrativos da instituição.
+                                        </li>
+                                        <li>
+                                            Desenvolvimento de um Progressive Web App (PWA), similar ao MinhaUfla, com PHP, JavaScript, HTML e CSS, utilizando frameworks Laravel 5.6, Vue.js e Material Design.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="work">
+                                    <span class="label label-info"><b>nov/2013 - dez/2015, DCC-UFLA</b></span>
+                                    <h5><b>Bolsista em Projeto de Extensão</b></h5>
+                                    <ul>
+                                        <li>
+                                            Desenvolvimento Web de um sistema dinâmico para catalogação de medidas de software, com base em linguagem Python, utilizando framework Flask, Bootstrap e banco de dados orientado a documentos MongoDB.
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <!-- outras atividades -->
-                <div class="container rounded" id="atividades" style="margin-top: 10px; background-color: white">
+                <div class="container section rounded" id="atividade">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><b>Outras atividades</b></h1>
-                            <ul class="no-list work">
-                                <h3><b></b></h3>
-                                <li>
-                                    <span class="label label-info"></span>
-                                    <h5><b>Infrastructure</b></h5>
-                                    <p>
-                                    </p>
+                            <h2><b>Atividades Complementares</b></h2>
+                            <ul class="no-list">
+                                <h3><b>Cursos</b></h3>
+                                <li class="work">
+                                    <span class="label label-info"><b>dez/2017, Udemy</b></span>
+                                    <h6>- Desenvolvimento Android</h6>
+                                    <span class="label label-info"><b>jan/2018, SigSoft</b></span>
+                                    <h6>- Java Básico</h6>
                                 </li>
-                                <li>
-                                    <span class="label label-info">2017-curr, EMAKERS-UFL</span>
-                                    <h5><b>Project director</b></h5>
+                            </ul>
+                            <ul class="no-list">
+                                <h3><b>Conhecimentos</b></h3>
+                                <li class="work">
                                     <p>
+                                        Usuário avançado de sistema GNU/Linux, Windows, Word, Excel e Power Point
                                     </p>
                                 </li>
                             </ul>
-                            <ul class="no-list work">
-                                <h3><b>Education</b></h3>
-                                <li>
-                                    <span class="label label-info">2016-curr., UFLA</span>
-                                    <h5><b>Federal University of Lavras</b></h5>
+                            <ul class="no-list">
+                                <h3><b>Aulas Ministradas</b></h3>
+                                <li class="work">
                                     <p>
-                                        Bachelor's degree, Computer Science.
+                                        Curso básico Linux ministrado para o Grupo de Pós-Graduação em Microbiologia da UFLA. (12 horas)
                                     </p>
                                 </li>
                             </ul>
@@ -152,14 +172,18 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3" style="background-color: rgba(0,0,0,0.6);">
+                <!-- Return to Top -->
+                <button id="return-to-top" title="Go to top">Top</button>
+            </div>
         </div>
-        <!-- Return to Top -->
-        <button id="back-t" title="Go to top">top</button>
-        <!-- Right side blank-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+    </div>
+
+    <!-- Right side blank-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
