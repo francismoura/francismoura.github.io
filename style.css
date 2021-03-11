@@ -1,5 +1,5 @@
 body {
-	background-image: url('images/back3.jpg');
+	background-image: url('images/bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -16,19 +16,26 @@ body {
 }
 
 .nav-pills>li {
-	background-color: #007bb5 !important;
+	background-color: #00439b !important;
 	margin: 5px;
 	padding-left: 0;
+	padding-right: 0;
 }
 
 .nav-pills>li>a {
 	padding: 16px;
-	color: white;
-	font-size: 18px;
+	color: #c1e1ff;
+	font-size: 16px;
 }
 
-.nav-pills>li>a:visited {
-	background-color: #4EA5D9 !important;
+.nav-link.active {
+	background-color: #2382ff !important;
+	font-size: 17px;
+	color: #e9f4ff !important;
+}
+
+.nav-pills>li>a:hover {
+	background-color: #0058cc !important;
 }
 
 /* About me config*/
@@ -72,22 +79,27 @@ body {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: #007bb5;
-	color: white;
+	background-color: #00439b;
+	color: #c1e1ff;
 	cursor: pointer;
-	padding: 10px;
+	padding: 14px;
 	border-radius: 5px;
 	font-size: 18px;
+	font-weight: 600;
 }
 
 #return-to-top:hover {
-	background-color: #4EA5D9;
+	background-color: #2382ff !important;
 }
 
 /* Resume */
 #resume {
 	margin-top: 10px;
 	background-color: white;
+}
+
+.section {
+	background-color: #fefefe !important;
 }
 
 .section h2 {
@@ -138,10 +150,12 @@ body {
 	white-space: nowrap;
 	vertical-align: baseline;
 	border-radius: .25em;
+	opacity: 0.8;
 }
 
 .label-info {
-	background-color: #4EA5D9;
+	background-color: #00439b;
+	color: #c1e1ff;
 }
 
 .no-list {
