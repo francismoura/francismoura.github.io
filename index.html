@@ -18,10 +18,10 @@
 </head>
 
 <body data-spy="scroll" data-target=".nav" data-offset="50">
-	<div class="container-fluid container-main">
+	<div class="container-fluid" id="container-main">
 		<div class="row">
 			<!-- Menu de opções -->
-			<div class="col-md-3" style="background-color: rgba(0,0,0,0.6); padding-top: 36px;">
+			<div class="col-md-3 col-items pr-0" id="col-menu">
 				<div class="container" id="menu">
 					<ul class="nav nav-pills flex-column">
 						<li class="nav-item rounded col-md-10">
@@ -43,16 +43,17 @@
 				</div>
 			</div>
 			<!-- info page -->
-			<div class="col-xl-6" style="background-color: rgba(0,0,0,0.6);">
-				<div class="container section rounded " id="aboutme">
+			<div class="col-xl-6 col-items">
+				<section class="container section rounded mt-2" id="aboutme">
 					<!-- Photo and description -->
-					<div class="row">
-						<div class="col-xl-3 d-flex justify-content-center text-center px-0">
-							<img class="rounded-circle m-0" id="photo" src="images/perfil.png">
+					<div class="mb-4 d-flex flex-row" id="div-aboutme">
+						<div class="d-flex flex-column align-items-center justify-content-center mt-2" id="div-perfil">
+							<img class="rounded-circle" id="photo" src="images/perfil.png" alt="imagem de perfil">
+							<a class="btn" id="cv" href="https://drive.google.com/file/d/1yt4wVeINrM3raRMt5JX4aPWeN2Ckl4_M/view?usp=sharing" target="_blank" role="button">Download CV</a>
 						</div>
-						<div class="col-xl-9">
-							<h2 class="ml-0 text-center"><b>Francis Moura</b></h2>
-							<div class="container mt-2 px-2">
+						<div class="pl-0 mt-4">
+							<h2 class="text-center"><b>Francis Moura</b></h2>
+							<div class="container" id="div-resume-aboutme">
 								<p class="text-justify">
 									Graduado em Sistemas de Informação pela Universidade Federal de Lavras - Brasil.
 									Tenho como objetivo profissional: crescer, evoluir e aprimorar-me como Desenvolvedor Full Stack.
@@ -62,12 +63,12 @@
 						</div>
 					</div>
 					<!-- Contact and social media-->
-					<div class="row justify-column px-2 mt-4">
-						<div class="col-sm-3">
-							<h6>E-mail:</h6>
-							<a id="email" href="mailto: francisgulla@gmail.com" class="h6"><b>francisgulla@gmail.com</b></a>
+					<div class="row flex-row m-auto">
+						<div class="col-sm-4 pl-0">
+							<h6 class="mb-1">E-mail:</h6>
+							<a id="email" href="mailto: francisgulla@gmail.com"><b>francisgulla@gmail.com</b></a>
 						</div>
-						<div class="col-sm-9 d-flex align-items-center justify-content-center" id="social">
+						<div class="col-sm-8 d-flex align-items-center justify-content-center" id="social">
 							<a id="facebook" href="https://www.facebook.com/francisgulla">
 								<img src="images/face.png" alt="Facebook" class="social facebook">
 							</a>
@@ -82,9 +83,9 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				</section >
 				<!-- Resume -->
-				<div class="container section rounded" id="resumo">
+				<section class="container section rounded" id="resumo">
 					<div class="row">
 						<div class="col-md-12">
 							<h2><b>Resumo</b></h2>
@@ -100,106 +101,125 @@
 							</ul>
 							<ul class="no-list">
 								<h3><b>Formação Acadêmica</b></h3>
-								<li class="work">
-									<span class="label label-info">2008-2017, UFLA</span>
-									<h5><b>Univesidade Federal de Lavras - UFLA</b></h5>
-									<p> Bacharel em Sistemas de Informação</p>
+								<li>
+									<div class="div-label">
+										<span class="label">jan/2008 - ago/2017, UFLA</span>
+										<h5><b>Univesidade Federal de Lavras - UFLA</b></h5>
+									</div>
+									<p class="last"> Bacharel em Sistemas de Informação</p>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
+				</section >
 				<!-- Experiência -->
-				<div class="container section rounded" id="experiencia">
+				<section class="container section rounded" id="experiencia">
 					<div class="row">
 						<div class="col-md-12">
 							<h2><b>Experiência Profissional</b></h2>
 							<ul class="no-list">
 								<li class="work">
-									<span class="label label-info"><b>out/2019 - fev/2020, Agência Zetta</b></span>
-									<h5><b>Desenvolvedor Full Stack</b></h5>
+									<div class="div-label">
+										<span class="label"><b>out/2019 - fev/2020, Agência Zetta</b></span>
+										<h5><b>Desenvolvedor Full Stack</b></h5>
+									</div>
 									<ul>
 										<li>
-											Desenvolvimento back-end e front-end de aplicações web, do setor público, na área ambiental,
+											<p>Desenvolvimento back-end e front-end de aplicações web, do setor público, na área ambiental,
 											para criação de microsserviços, novas funcionalidades, integração entre sistemas e manutenções, utilizando
-											Java, Javascript, Spring Framework, Play Framework, AngularJS, VueJS e banco de dados PostgresSQL.
+											Java, Javascript, Spring Framework, Play Framework, AngularJS, VueJS e banco de dados PostgresSQL.</p>
 										</li>
 									</ul>
 								</li>
 								<li class="work">
-									<span class="label label-info"><b>out/2017 - out/2018, DGTI-UFLA</b></span>
-									<h5><b>Desenvolvedor Full Stack</b></h5>
+									<div class="div-label">
+										<span class="label"><b>out/2017 - out/2018, DGTI-UFLA</b></span>
+										<h5><b>Desenvolvedor Full Stack</b></h5>
+									</div>
 									<ul>
 										<li>
-											Desenvolvimento mobile para Android nativo com Java, do aplicativo “MinhaUfla”,
-											criado para gerenciar dados dos estudantes e técnicos administrativos da UFLA.
-											Além disso, atuei no desenvolvimento inicial de um Progressive Web App (PWA), similar ao “MinhaUFLA”,
-											utilizando PHP, JavaScript, Laravel 5.6 e Vue.js.
+											<p>
+												Desenvolvimento mobile para Android nativo com Java, do aplicativo “MinhaUfla”,
+												criado para gerenciar dados dos estudantes e técnicos administrativos da UFLA.
+												Além disso, atuei no desenvolvimento inicial de um Progressive Web App (PWA), similar ao “MinhaUFLA”,
+												utilizando PHP, JavaScript, Laravel 5.6 e Vue.js.
+											</p>
 										</li>
 									</ul>
 								</li>
 								<li class="work">
-									<span class="label label-info"><b>nov/2013 - dez/2015, DCC-UFLA</b></span>
-									<h5><b>Bolsista em Projeto de Extensão</b></h5>
+									<div class="div-label">
+										<span class="label"><b>nov/2013 - dez/2015, DCC-UFLA</b></span>
+										<h5><b>Bolsista em Projeto de Extensão</b></h5>
+									</div>
 									<ul>
 										<li>
-											Desenvolvimento web de um sistema dinâmico para catalogação de medidas de software,
-											utilizando Python, Flask, Bootstrap e banco de dados MongoDB.
+											<p>
+												Desenvolvimento web de um sistema dinâmico para catalogação de medidas de software,
+												utilizando Python, Flask, Bootstrap e banco de dados MongoDB.
+											</p>
 										</li>
 									</ul>
 								</li>
 								<li class="work">
-									<span class="label label-info"><b>dez/2009 - jul/2010, DCC-UFLA</b></span>
-									<h5><b>Bolsista Institucional</b></h5>
+									<div class="div-label">
+										<span class="label"><b>dez/2009 - jul/2010, DCC-UFLA</b></span>
+										<h5><b>Bolsista Institucional</b></h5>
+									</div>
 									<ul>
 										<li>
-											Montagem e manutenção em microcomputadores, e configuração de redes.
+											<p>Montagem e manutenção em microcomputadores, e configuração de redes.</p>
 										</li>
 									</ul>
 								</li>
 								<li class="work">
-									<span class="label label-info"><b>dez/2009 - jul/2010, DGTI-UFLA</b></span>
-									<h5><b>Bolsista Institucional</b></h5>
+									<div class="div-label">
+										<span class="label"><b>dez/2009 - jul/2010, DGTI-UFLA</b></span>
+										<h5><b>Bolsista Institucional</b></h5>
+									</div>
 									<ul>
 										<li>
-											Instalação e manutenção em infraestruturas de redes elétricas, telefônicas e de internet, nos departamentos da universidade.
+											<p>Instalação e manutenção em infraestruturas de redes elétricas, telefônicas e de internet, nos departamentos da universidade.</p>
 										</li>
 									</ul>
 								</li>
-								<li class="work">
-									<span class="label label-info"><b>ago/2008 - jul/2009, Grupo de Pesquisa em Engenharia de Software (PqES) – UFLA</b></span>
-									<h5><b>Bolsista institucional</b></h5>
+								<li>
+									<div class="div-label">
+										<span class="label"><b>ago/2008 - jul/2009, Grupo de Pesquisa em Engenharia de Software (PqES) – UFLA</b></span>
+										<h5><b>Bolsista institucional</b></h5>
+									</div>
 									<ul>
 										<li>
-											Desenvolvimento Web para perfil profissional online, utilizando PHP, HTML5, CSS e MySQL.
+											<p>Desenvolvimento Web para perfil profissional online, utilizando PHP, HTML5, CSS e MySQL.</p>
 										</li>
 									</ul>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
+				</section >
 				<!-- Skills-->
-				<div class="container section rounded" id="skills">
+				<section class="container section rounded" id="skills">
 					<div class="row">
 						<div class="col-md-12">
 							<h2><b>Skills</b></h2>
-							<div class="container" style="margin-bottom: 50px;">
+							<div class="container mb-4 px-0">
 
 								<p>Nível de skills considerando um Desenvolvedor Júnior:</p>
 
 								<h5><b>Programming Language</b></h5>
+
 								<div class="progress">
-									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated rounded" style="width:70%">Java</div>
+									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated rounded" style="width:75%">Java</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:65%">JavaScript</div>
+									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:75%">JavaScript</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:60%">PHP</div>
+									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:70%">HTML/CSS</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:60%">HTML/CSS</div>
+									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:65%">PHP</div>
 								</div>
 								<div class="progress">
 									<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated rounded" style="width:60%">SQL</div>
@@ -213,75 +233,78 @@
 
 								<h5 class="pt-4"><b>Frameworks and others</b></h5>
 								<div class="progress">
-									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:75%">VueJS</div>
+									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:80%">VueJS</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:70%">Android Studio</div>
+									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:75%">Android Studio</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:65%">GIT</div>
+									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:75%">GIT</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated rounded" style="width:60%">Spring Framework</div>
+									<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated rounded" style="width:70%">Spring Framework</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated rounded" style="width:55%">AngularJS</div>
+									<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated rounded" style="width:65%">AngularJS</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated rounded" style="width:50%">Linux</div>
+									<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated rounded" style="width:65%">Linux</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:45%">Laravel</div>
+									<div class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded" style="width:45%">Docker e Vagrant</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:45%">NodeJS</div>
+									<div class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded" style="width:45%">Laravel</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:35%">Flask</div>
+									<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded" style="width:45%">NodeJS</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated rounded" style="width:35%">MongoDB</div>
+									<div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated rounded" style="width:35%">Flask</div>
 								</div>
 								<div class="progress">
-									<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated rounded" style="width:35%">Docker e Vagrant</div>
+									<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated rounded" style="width:35%">MongoDB</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
-				</div>
+				</section >
 				<!-- outras atividades -->
-				<div class="container section rounded" id="atividade">
+				<section class="container section rounded" id="atividade">
 					<div class="row">
 						<div class="col-md-12">
 							<h2><b>Atividades Complementares</b></h2>
 							<ul class="no-list">
-								<h3><b>Cursos</b></h3>
+								<h5 class="mb-4"><b>Cursos</b></h5>
 								<li class="work">
-									<span class="label label-info"><b>dez/2017, Udemy</b></span>
-									<h6>- Desenvolvimento Android</h6>
-									<span class="label label-info"><b>jan/2018, SigSoft</b></span>
-									<h6>- Java Básico</h6>
+									<div class="div-label">
+										<span class="label"><b>dez/2017, Udemy</b></span>
+										<p class="mb-0">- Desenvolvimento Android</p>
+									</div>
+									<div class="div-label last">
+										<span class="label"><b>jan/2018, SigSoft</b></span>
+										<p class="mb-0">- Java Básico</p>
+									</div>
 								</li>
 							</ul>
 							<ul class="no-list">
-								<h3><b>Conhecimentos</b></h3>
-								<li class="work">
+								<h5 class="mb-4"><b>Conhecimentos</b></h5>
+								<li class="work last">
 									<p>- Usuário intermediário de sistema GNU/Linux e Windows</p>
-									<p>- Usuário avançado de Word, Excel e Power Point</p>
+									<p class="last">- Usuário avançado de Word, Excel e Power Point</p>
 								</li>
 							</ul>
 							<ul class="no-list">
-								<h3><b>Aulas Ministradas</b></h3>
-								<li class="work">
+								<h5 class="mb-4"><b>Aulas Ministradas</b></h5>
+								<li class="last">
 									<p>Curso básico Linux ministrado para o Grupo de Pós-Graduação em Microbiologia da UFLA. (12 horas)</p>
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
+				</section >
 			</div>
-			<div class="return-to-top col-md-3" style="background-color: rgba(0,0,0,0.6);">
+			<div class="return-to-top col-md-3 col-items pl-0">
 				<!-- Return to Top -->
 				<button class="btn" id="return-to-top" title="Go to top">Top</button>
 			</div>
