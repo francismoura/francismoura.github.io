@@ -26,14 +26,14 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 2px !important;
 	font-weight: 600 !important;
-	background-color: #5b0dc9;
+	background-color: #0058cc;
 	color: white;
 	width: 180px;
 }
 
 #cv:hover {
-	color: rgb(202, 174, 255);
-	background-color: #4802aa !important;
+	color: #c1e1ff;
+	background-color: #00439b !important;
 }
 
 #div-aboutme div:first-child {
@@ -73,7 +73,7 @@ body {
 	z-index: 99;
 	border: none;
 	outline: none;
-	background-color: #5b0dc9;
+	background-color: #0058cc;
 	color: white;
 	cursor: pointer;
 	padding: 14px;
@@ -83,8 +83,8 @@ body {
 }
 
 #return-to-top:hover {
-	color: rgb(202, 174, 255);
-	background-color: #4802aa !important;
+	color: #c1e1ff;
+	background-color: #00439b !important;
 }
 
 /* Resume */
@@ -129,7 +129,7 @@ body {
 	text-align: left !important;
 	vertical-align: baseline;
 	border-radius: .25em;
-	background-color: #6800f4;
+	background-color: #0058cc;
 	font-weight: 600;
 	opacity: 0.9;
 	margin-bottom: 0 !important;
@@ -141,14 +141,14 @@ body {
 }
 
 .nav-link.active {
-	background-color: #6800f4 !important;
-	color: white;
+	background-color: #2382ff !important;
+	color: #e9f4ff;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 .nav-pills>li {
-	background-color: #4802aa !important;
+	background-color: #00439b !important;
 	margin: 5px;
 	padding-left: 0;
 	padding-right: 0;
@@ -156,13 +156,12 @@ body {
 
 .nav-pills>li>a {
 	padding: 16px;
-	color: rgb(202, 174, 255);
+	color: #c1e1ff;
 	font-size: 16px;
 }
 
 .nav-pills>li>a:hover {
-	/* background-color: #5b0dc9 !important; */
-	color: white;
+	background-color: #0058cc !important;
 }
 
 .no-list {
